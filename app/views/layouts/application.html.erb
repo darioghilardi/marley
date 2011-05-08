@@ -32,21 +32,14 @@
         <header id="header" class="grid_16">
             <hgroup class="grid_10 alpha">
                 <h1>marley.</h1>
-                <h2>Giuseppe's home</h2>
+                <h2><%= yield :title %></h2>
             </hgroup>
 
             <p class="grid_6 omega">Hello, <a href="#" class="name">Giuseppe</a>! | <a href="#">Logout</a></p>
         </header>
 
         <div id="main" role="main" class="grid_16">
-            <nav id="menu">
-                <ul class="clearfix">
-                    <li><a href="#" id="hot-stuff" class="selected">Dashboard</a></li>
-                    <li><a href="#">My tasks</a></li>
-                    <li><a href="#">My projects</a></li>
-                    <li><a href="#">My teams</a></li>
-                </ul>
-            </nav>
+            <%= yield :top %>
 
             <%= yield %>
         </div>
