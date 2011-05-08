@@ -31,11 +31,17 @@
     <div id="container" class="container_16">
         <header id="header" class="grid_16">
             <hgroup class="grid_10 alpha">
-                <h1><%= link_to "marley.", :controller => "dashboard" %></h1>
+                <h1><%= link_to "marley.", :controller => "/dashboard" %></h1>
                 <h2><%= yield :title %></h2>
             </hgroup>
 
-            <p class="grid_6 omega">Hello, <a href="#" class="name">Giuseppe</a>! | <a href="#">Logout</a></p>
+            <p class="grid_6 omega">
+                <% if user_signed_in? %>
+                    Hello, <%= link_to current_user.name, edit_user_registration_path, :class => "user" %>! | <%= link_to "Logout", destroy_user_session_path %>
+                <% else %>
+                    <%= link_to "Sign in", new_user_session_path %>
+                <% end %>
+            </p>
         </header>
 
         <div id="main" role="main" class="grid_16">
