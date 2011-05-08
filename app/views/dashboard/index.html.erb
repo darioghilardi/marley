@@ -1,7 +1,1 @@
-<% @upcoming_tasks.each do |task| %>
-<article class="task">
-<time><%= task.deadline %></time>
-    <div class="content"><%= task.title %></div>
-    <footer><%= task.project.team %> &gt; <%= task.project %></footer>
-</article>
-<% end %>
+<%= render @upcoming_tasks %>
