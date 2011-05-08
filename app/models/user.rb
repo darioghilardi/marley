@@ -9,4 +9,7 @@ class User < ActiveRecord::Base
 
   has_many :memberships
   has_many :teams, :through => :memberships
+
+  has_many :assignments
+  has_many :tasks, :through => :assignments
 end
