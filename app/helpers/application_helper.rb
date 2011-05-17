@@ -4,7 +4,7 @@ module ApplicationHelper
     content_for(:title) { page_title }
   end
 
-  def menu_link(title, controller)
-    link_to title, { :controller => controller }, current_page?(:controller => controller) ? { :class => "selected" } : {}
+  def menu_link(title, controller_name)
+    link_to title, { :controller => controller_name }, controller.controller_name == controller_name ? { :class => "selected" } : {}
   end
 end
