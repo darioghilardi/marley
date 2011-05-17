@@ -1,5 +1,6 @@
 class DashboardController < ApplicationController
   layout "main"
+  before_filter :authenticate_user!
 
   def index
     user = current_user || User.new
