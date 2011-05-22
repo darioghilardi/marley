@@ -1,4 +1,4 @@
-/*= COLORS
+/* COLORS
  * Grey:   #3E453E
  * Sand:   #E8BC7D
  * Green:  #6B8E23
@@ -9,30 +9,30 @@
  */
 
 html {
-    background: url(../images/footer.gif) bottom left repeat-x;
+    background: url(footer.gif) bottom left repeat-x;
 }
 
 body {
     color: #444;
-    background: url(../images/header.gif) top left repeat-x;
+    background: url(header.gif) top left repeat-x;
 }
 
 .show_grid {
-    background: url(../images/16_col.gif);
+    background: url(16_col.gif);
 }
 
 #container {
     overflow: hidden;
 }
 
-/*=HEADER=*/
+/* HEADER */
 
 #header {
     font-size: 14px;
 }
 
 #header h1 {
-    color: #FFF;
+    color  #FFF;
     line-height: 50px;
 }
 
@@ -56,7 +56,7 @@ h2 {
     text-align: right;
 }
 
-/*=MENU=*/
+/* MENU */
 
 #menu li {
     float: left;
@@ -83,7 +83,7 @@ h2 {
     color: #FFF;
 }
 
-/*=DASHBOARD=*/
+/* DASHBOARD */
 
 .task {
     margin-bottom: 20px;
@@ -103,7 +103,7 @@ h2 {
     margin-bottom: 20px;
 }
 
-/*=FOOTER=*/
+/* FOOTER */
 
 #footer {
     bottom: 0;
