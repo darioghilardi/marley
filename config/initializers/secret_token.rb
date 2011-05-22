@@ -4,4 +4,4 @@
 # If you change this key, all old signed cookies will become invalid!
 # Make sure the secret is at least 30 characters and all random,
 # no regular words or you'll be exposed to dictionary attacks.
-Marley::Application.config.secret_token = 'e55d74d829ed7ff47bbdfbca7871c3cd15b0c4e476b4190c7442e37a79a0ddb20f90990689b6d76b86f72672fa80e6a0242d9407b436ff2b102c2d84c9a2ea10'
+Marley::Application.config.secret_token = '96c6f87658eda060fd06b104537d5518c32ecf86d219aec71a703360148fd5859ce54253f3e60a76abb25a7dfc0cc7bc6e1409eb99ab2a71cae46fae34fc985d'
