@@ -1,0 +1,108 @@
+/* COLORS */
+
+/* http://www.colourlovers.com/palette/762406/Jamaica_pizza */
+$dark_grey:  #3E453E;
+$sand:       #E8BC7D;
+$green:      #6B8E23;
+$yellow:     #FFA500;
+$orange:     #FF4500;
+
+$white:      #FFFFFF;
+$light_grey: #E0E0E0;
+$mid_grey:   #666666;
+
+/* MAIN */
+
+html {
+  background: url(footer.gif) bottom left repeat-x;
+}
+
+body {
+  color: $dark_grey;
+  background: url(header.gif) top left repeat-x;
+}
+
+.show_grid {
+  background: url(16_col.gif);
+}
+
+#container {
+  overflow: hidden;
+}
+
+/* HEADER */
+
+#header {
+  font-size: 14px;
+
+  h1 {
+    color: $white;
+    line-height: 50px;
+  }
+
+  h2 {
+    color: $green;
+    font-size: 28px;
+  }
+
+  a {
+    color: $white;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  p {
+    color: $light_grey;
+    line-height: 50px;
+    text-align: right;
+  }
+}
+
+/* MENU */
+
+#menu {
+  li {
+    float: left;
+    list-style: none;
+    margin: {
+      left: 0;
+      right: 20px;
+    }
+  }
+
+  a {
+    border-radius: 20px;
+    color: $dark_grey;
+    display: block;
+    font-weight: bold;
+    padding: 3px 12px;
+    text-decoration: none;
+
+    &:hover {
+      background-color: $light_grey;
+    }
+
+    &.selected {
+      background-color: $orange;
+      color: $white;
+    }
+  }
+}
+
+/* FOOTER */
+
+#footer {
+  bottom: 0;
+  color: $mid_grey;
+  left: 50%;
+  line-height: 50px;
+  margin-left: -470px;
+  position: fixed;
+
+  p {
+    margin-bottom: 0;
+  }
+}
