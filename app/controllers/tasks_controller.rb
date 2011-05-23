@@ -1,5 +1,4 @@
 class TasksController < ApplicationController
-  layout "main"
 
   # GET /tasks
   # GET /tasks.xml

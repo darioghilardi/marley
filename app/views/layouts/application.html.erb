@@ -38,16 +38,18 @@
 
       <p class="grid_6 omega">
         <% if user_signed_in? %>
-            Hello, <%= link_to current_user.name, edit_user_registration_path, 
-                :class => "user" %>! | 
-                <%= link_to "Logout", destroy_user_session_path %>
+          Hello, <%= link_to current_user.name, edit_user_registration_path, 
+            :class => "user" %>! | 
+            <%= link_to "Logout", destroy_user_session_path %>
         <% else %>
-            <%= link_to "Sign in", new_user_session_path %>
+          <%= link_to "Sign in", new_user_session_path %>
         <% end %>
       </p>
     </header><!--! end of #header -->
 
-    <%= yield :top %>
+    <nav id="menu" class="grid_16">
+      <%= render "shared/menu" %>
+    </nav>
 
     <div id="main" role="main" class="grid_16">
       <h2><%= yield :title %></h2>
@@ -56,7 +58,7 @@
     </div><!--! end of #main -->
 
     <footer id="footer" class="grid_16">
-        <p>&copy; 2011 - The Marley team</p>
+      <p>&copy; 2011 - The Marley team</p>
     </footer>
   </div><!--! end of #container -->
 </body>
